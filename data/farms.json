@@ -1,0 +1,474 @@
+[
+  {
+    "id": "iron_farm_1v",
+    "name": "Iron Farm (1 village)",
+    "category": "metal",
+    "output_item": "minecraft:iron_ingot",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 9000,
+      "per_tps_loss": 450,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "1 golem toutes les ~40s"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:iron_ingot", "count": 80 },
+      { "id": "minecraft:glass", "count": 64 },
+      { "id": "minecraft:stone_bricks", "count": 128 },
+      { "id": "minecraft:chest", "count": 4 },
+      { "id": "minecraft:hopper", "count": 8 },
+      { "id": "minecraft:lava_bucket", "count": 1 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "iron_farm_4v",
+    "name": "Iron Farm (4 villages)",
+    "category": "metal",
+    "output_item": "minecraft:iron_ingot",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 36000,
+      "per_tps_loss": 1800,
+      "optimal_tps": 20,
+      "min_sim_distance": 5,
+      "notes": "Design Rays Works ou similaire. 4× rendement vs 1v"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:iron_ingot", "count": 280 },
+      { "id": "minecraft:glass", "count": 200 },
+      { "id": "minecraft:stone_bricks", "count": 400 },
+      { "id": "minecraft:hopper", "count": 24 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "iron_farm_8v",
+    "name": "Iron Farm (8 villages — mega)",
+    "category": "metal",
+    "output_item": "minecraft:iron_ingot",
+    "difficulty": "advanced",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 72000,
+      "per_tps_loss": 3600,
+      "optimal_tps": 20,
+      "min_sim_distance": 6,
+      "notes": "Nécessite un bon serveur (sim distance 6+)"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:iron_ingot", "count": 520 },
+      { "id": "minecraft:glass", "count": 380 },
+      { "id": "minecraft:stone_bricks", "count": 800 },
+      { "id": "minecraft:hopper", "count": 48 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "gold_farm_nether",
+    "name": "Gold Farm (Nether, standard)",
+    "category": "metal",
+    "output_item": "minecraft:gold_ingot",
+    "difficulty": "intermediate",
+    "requires_nether": true,
+    "rates": {
+      "base_per_hour": 6000,
+      "per_tps_loss": 300,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Plateforme de spawn 22×22 minimum. Drop : lingots, nuggets, épées, armures"
+    },
+    "extra_drops": ["minecraft:gold_nugget", "minecraft:gold_sword", "minecraft:golden_boots"],
+    "resources_to_build": [
+      { "id": "minecraft:obsidian", "count": 196 },
+      { "id": "minecraft:iron_ingot", "count": 160 },
+      { "id": "minecraft:glass", "count": 64 },
+      { "id": "minecraft:hopper", "count": 16 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "gold_farm_nether_perimeter",
+    "name": "Gold Farm (Nether, périmètre)",
+    "category": "metal",
+    "output_item": "minecraft:gold_ingot",
+    "difficulty": "expert",
+    "requires_nether": true,
+    "rates": {
+      "base_per_hour": 180000,
+      "per_tps_loss": 9000,
+      "optimal_tps": 20,
+      "min_sim_distance": 8,
+      "notes": "Nécessite périmètre Nether 128 blocs autour. Projet de plusieurs semaines"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "mob_farm_darkroom",
+    "name": "Mob Farm (darkroom standard)",
+    "category": "mob_drops",
+    "output_items": ["minecraft:gunpowder", "minecraft:string", "minecraft:rotten_flesh", "minecraft:arrow", "minecraft:bone"],
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 3600,
+      "per_tps_loss": 180,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Rendement en drops variés. Dépend de la taille de la darkroom"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:cobblestone", "count": 2048 },
+      { "id": "minecraft:chest", "count": 8 },
+      { "id": "minecraft:hopper", "count": 16 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "creeper_farm",
+    "name": "Creeper Farm (gunpowder)",
+    "category": "mob_drops",
+    "output_item": "minecraft:gunpowder",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 4800,
+      "per_tps_loss": 240,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Utilise des cats pour forcer le spawn de creepers uniquement"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:cobblestone", "count": 1024 },
+      { "id": "minecraft:trapdoor", "count": 128 },
+      { "id": "minecraft:chest", "count": 8 },
+      { "id": "minecraft:hopper", "count": 12 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "enderman_farm_end",
+    "name": "Enderman Farm (End island)",
+    "category": "mob_drops",
+    "output_item": "minecraft:ender_pearl",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 1800,
+      "per_tps_loss": 90,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Sur l'End island, au-dessus de Y=128. Looting III augmente le drop"
+    },
+    "extra_drops": ["minecraft:experience_bottle"],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "enderman_farm_perimeter",
+    "name": "Enderman Farm (périmètre End)",
+    "category": "mob_drops",
+    "output_item": "minecraft:ender_pearl",
+    "difficulty": "expert",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 140000,
+      "per_tps_loss": 7000,
+      "optimal_tps": 20,
+      "min_sim_distance": 8,
+      "notes": "Périmètre de 128 blocs dans l'End. Aussi farm XP massive"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "blaze_farm",
+    "name": "Blaze Farm (forteresse Nether)",
+    "category": "nether",
+    "output_item": "minecraft:blaze_rod",
+    "difficulty": "intermediate",
+    "requires_nether": true,
+    "rates": {
+      "base_per_hour": 2400,
+      "per_tps_loss": 120,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Nécessite une forteresse du Nether. Spawner intégré ou plateforme de spawn"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:cobblestone", "count": 512 },
+      { "id": "minecraft:chest", "count": 4 },
+      { "id": "minecraft:hopper", "count": 8 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "slime_farm_swamp",
+    "name": "Slime Farm (marais)",
+    "category": "mob_drops",
+    "output_item": "minecraft:slime_ball",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 1200,
+      "per_tps_loss": 60,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Dans les marais, nuit uniquement. Phase de lune affecte le spawn"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "slime_farm_chunk",
+    "name": "Slime Farm (slime chunk)",
+    "category": "mob_drops",
+    "output_item": "minecraft:slime_ball",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 7200,
+      "per_tps_loss": 360,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Dans les slime chunks (Y<40). Trouver les chunks avec un seed checker"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:cobblestone", "count": 2048 },
+      { "id": "minecraft:magma_block", "count": 256 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "sugar_cane_observer",
+    "name": "Sugar Cane Farm (observer + piston)",
+    "category": "plant",
+    "output_item": "minecraft:sugar_cane",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 10800,
+      "per_tps_loss": 540,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Par rangée de 16 cannes. Multiplier selon taille de la farm"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:observer", "count": 32 },
+      { "id": "minecraft:piston", "count": 32 },
+      { "id": "minecraft:chest", "count": 4 },
+      { "id": "minecraft:hopper", "count": 8 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "bamboo_farm",
+    "name": "Bamboo Farm",
+    "category": "plant",
+    "output_item": "minecraft:bamboo",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 86400,
+      "per_tps_loss": 4320,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Excellente source de fuel. Design très compact. Peut alimenter un smoker/furnace array"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:observer", "count": 64 },
+      { "id": "minecraft:piston", "count": 64 },
+      { "id": "minecraft:chest", "count": 4 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "kelp_farm",
+    "name": "Kelp Farm (fuel)",
+    "category": "plant",
+    "output_item": "minecraft:dried_kelp",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 28800,
+      "per_tps_loss": 1440,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Kelp séché = excellent fuel (200 items/bloc). Auto-fonderie possible"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "wood_farm_giant",
+    "name": "Wood Farm (bonemeal + tree)",
+    "category": "wood",
+    "output_item": "minecraft:oak_log",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 43200,
+      "per_tps_loss": 2160,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Utilise de la bonemeal pour accélérer. Idéal pour bois + feuilles massifs"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:dispenser", "count": 16 },
+      { "id": "minecraft:observer", "count": 16 },
+      { "id": "minecraft:piston", "count": 32 },
+      { "id": "minecraft:chest", "count": 8 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "sand_farm_tnt_dup",
+    "name": "Sand Farm (duplication TNT)",
+    "category": "natural",
+    "output_item": "minecraft:sand",
+    "difficulty": "advanced",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 54000,
+      "per_tps_loss": 2700,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Basée sur duplication TNT. Vérifier si activée sur ton serveur"
+    },
+    "versions": ["1.19", "1.20"],
+    "notes": "La duplication TNT peut être désactivée par certains serveurs"
+  },
+  {
+    "id": "xp_farm_spawner",
+    "name": "XP Farm (spawner zombie/squelette)",
+    "category": "xp",
+    "output_item": "minecraft:experience_bottle",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 72000,
+      "per_tps_loss": 3600,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Dépend de la distance au spawner (max 16 blocs). Très efficace pour enchanter"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:cobblestone", "count": 256 },
+      { "id": "minecraft:chest", "count": 4 },
+      { "id": "minecraft:hopper", "count": 8 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "bonemeal_farm_composter",
+    "name": "Bonemeal Farm (composter automatique)",
+    "category": "utility",
+    "output_item": "minecraft:bone_meal",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 14400,
+      "per_tps_loss": 720,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Utilise les déchets de la bamboo farm ou kelp farm. Synergise avec les farms de plantes"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:composter", "count": 16 },
+      { "id": "minecraft:hopper", "count": 32 },
+      { "id": "minecraft:chest", "count": 8 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "wool_farm",
+    "name": "Wool Farm (moutons automatique)",
+    "category": "mob_drops",
+    "output_item": "minecraft:white_wool",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 21600,
+      "per_tps_loss": 1080,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Observer + dispenseur avec cisailles + bonemeal sur l'herbe. Toutes couleurs possibles"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:observer", "count": 8 },
+      { "id": "minecraft:dispenser", "count": 8 },
+      { "id": "minecraft:chest", "count": 4 },
+      { "id": "minecraft:hopper", "count": 8 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "chicken_farm",
+    "name": "Chicken Farm (œufs + poulet cuit)",
+    "category": "food",
+    "output_items": ["minecraft:cooked_chicken", "minecraft:egg", "minecraft:feather"],
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 7200,
+      "per_tps_loss": 360,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Couvaison automatique des œufs, lava pour cuire. Excellent pour food early-game"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:chest", "count": 4 },
+      { "id": "minecraft:hopper", "count": 8 },
+      { "id": "minecraft:dispenser", "count": 2 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "cow_farm",
+    "name": "Cow Farm (cuir + steak)",
+    "category": "food",
+    "output_items": ["minecraft:cooked_beef", "minecraft:leather"],
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 3600,
+      "per_tps_loss": 180,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Elevage automatique avec wheat. Lava pour cuire directement"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "villager_trading",
+    "name": "Villager Trading Hall",
+    "category": "utility",
+    "output_item": "minecraft:emerald",
+    "difficulty": "advanced",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 900,
+      "per_tps_loss": 45,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Dépend des trades disponibles. Extrêmement utile pour émeraudes et items enchantés"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "copper_farm_drowned",
+    "name": "Copper Farm (drowned)",
+    "category": "metal",
+    "output_item": "minecraft:copper_ingot",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 5400,
+      "per_tps_loss": 270,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Les drowned droppent du raw copper. Aussi drops : os, chair, or (si zombie converti)"
+    },
+    "extra_drops": ["minecraft:bone", "minecraft:rotten_flesh"],
+    "versions": ["1.19", "1.20", "1.21"]
+  }
+]

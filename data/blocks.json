@@ -1,0 +1,696 @@
+[
+  {
+    "id": "minecraft:cobblestone",
+    "name": "Cobblestone", "name_fr": "Cobblestone",
+    "category": "building", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Obtenu en minant de la stone"
+  },
+  {
+    "id": "minecraft:stone",
+    "name": "Stone", "name_fr": "Pierre",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:cobblestone", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:smooth_stone",
+    "name": "Smooth Stone", "name_fr": "Pierre lisse",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:stone", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:stone_bricks",
+    "name": "Stone Bricks", "name_fr": "Briques de pierre",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:stone", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:mossy_stone_bricks",
+    "name": "Mossy Stone Bricks", "name_fr": "Briques mousseuses",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:stone_bricks", "count": 1 }, { "id": "minecraft:vine", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:cracked_stone_bricks",
+    "name": "Cracked Stone Bricks", "name_fr": "Briques craquelées",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:stone_bricks", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:chiseled_stone_bricks",
+    "name": "Chiseled Stone Bricks", "name_fr": "Briques ciselées",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:stone_brick_slab", "count": 2 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:cobbled_deepslate",
+    "name": "Cobbled Deepslate", "name_fr": "Cobbled Deepslate",
+    "category": "building", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Obtenu en minant du deepslate (Y < -8)"
+  },
+  {
+    "id": "minecraft:deepslate",
+    "name": "Deepslate", "name_fr": "Deepslate",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:cobbled_deepslate", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:polished_deepslate",
+    "name": "Polished Deepslate", "name_fr": "Deepslate poli",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:cobbled_deepslate", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:deepslate_bricks",
+    "name": "Deepslate Bricks", "name_fr": "Briques de deepslate",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:polished_deepslate", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:deepslate_tiles",
+    "name": "Deepslate Tiles", "name_fr": "Tuiles de deepslate",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:deepslate_bricks", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:cracked_deepslate_bricks",
+    "name": "Cracked Deepslate Bricks", "name_fr": "Briques de deepslate craquelées",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:deepslate_bricks", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:clay_ball",
+    "name": "Clay Ball", "name_fr": "Boule d'argile",
+    "category": "natural", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Obtenu en minant du clay (fonds de rivières)"
+  },
+  {
+    "id": "minecraft:brick",
+    "name": "Brick", "name_fr": "Brique",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:clay_ball", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:bricks",
+    "name": "Bricks", "name_fr": "Bloc de briques",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:brick", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:terracotta",
+    "name": "Terracotta", "name_fr": "Terracotta",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:clay_ball", "count": 4, "note": "via bloc d'argile" }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:sand",
+    "name": "Sand", "name_fr": "Sable",
+    "category": "natural", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:red_sand",
+    "name": "Red Sand", "name_fr": "Sable rouge",
+    "category": "natural", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Exclusif aux biomes Mesa/Badlands"
+  },
+  {
+    "id": "minecraft:gravel",
+    "name": "Gravel", "name_fr": "Gravier",
+    "category": "natural", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:dirt",
+    "name": "Dirt", "name_fr": "Terre",
+    "category": "natural", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:glass",
+    "name": "Glass", "name_fr": "Verre",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:sand", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:glass_pane",
+    "name": "Glass Pane", "name_fr": "Panneau de verre",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x2", "ingredients": [{ "id": "minecraft:glass", "count": 6 }], "output": 16 }
+  },
+  {
+    "id": "minecraft:tinted_glass",
+    "name": "Tinted Glass", "name_fr": "Verre teinté",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:amethyst_shard", "count": 4 }, { "id": "minecraft:glass", "count": 1 }], "output": 2 }
+  },
+  {
+    "id": "minecraft:sandstone",
+    "name": "Sandstone", "name_fr": "Grès",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:sand", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:smooth_sandstone",
+    "name": "Smooth Sandstone", "name_fr": "Grès lisse",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:sandstone", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:red_sandstone",
+    "name": "Red Sandstone", "name_fr": "Grès rouge",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:red_sand", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:quartz",
+    "name": "Nether Quartz", "name_fr": "Quartz du Nether",
+    "category": "nether", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:quartz_block",
+    "name": "Block of Quartz", "name_fr": "Bloc de quartz",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:quartz", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:smooth_quartz",
+    "name": "Smooth Quartz", "name_fr": "Quartz lisse",
+    "category": "building", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:quartz_block", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:chiseled_quartz_block",
+    "name": "Chiseled Quartz", "name_fr": "Quartz ciselé",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:quartz_slab", "count": 2 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:netherrack",
+    "name": "Netherrack", "name_fr": "Netherrack",
+    "category": "nether", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:nether_brick",
+    "name": "Nether Brick (item)", "name_fr": "Brique du Nether",
+    "category": "nether", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:netherrack", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:nether_bricks",
+    "name": "Nether Bricks", "name_fr": "Bloc de briques du Nether",
+    "category": "nether", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:nether_brick", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:red_nether_bricks",
+    "name": "Red Nether Bricks", "name_fr": "Briques rouges du Nether",
+    "category": "nether", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:nether_brick", "count": 2 }, { "id": "minecraft:nether_wart", "count": 2 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:blackstone",
+    "name": "Blackstone", "name_fr": "Blackstone",
+    "category": "nether", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:polished_blackstone",
+    "name": "Polished Blackstone", "name_fr": "Blackstone poli",
+    "category": "nether", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:blackstone", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:polished_blackstone_bricks",
+    "name": "Polished Blackstone Bricks", "name_fr": "Briques de blackstone poli",
+    "category": "nether", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:polished_blackstone", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:obsidian",
+    "name": "Obsidian", "name_fr": "Obsidienne",
+    "category": "building", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Formée au contact lava source + eau. Nécessite pioche en diamant+"
+  },
+  {
+    "id": "minecraft:crying_obsidian",
+    "name": "Crying Obsidian", "name_fr": "Obsidienne pleurante",
+    "category": "building", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Obtenue des ruined portals ou via piglins bartering"
+  },
+  {
+    "id": "minecraft:end_stone",
+    "name": "End Stone", "name_fr": "Pierre de l'End",
+    "category": "end", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:end_stone_bricks",
+    "name": "End Stone Bricks", "name_fr": "Briques de l'End",
+    "category": "end", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:end_stone", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:purpur_block",
+    "name": "Purpur Block", "name_fr": "Bloc de purpur",
+    "category": "end", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:popped_chorus_fruit", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:oak_log",
+    "name": "Oak Log", "name_fr": "Bûche de chêne",
+    "category": "wood", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:spruce_log",
+    "name": "Spruce Log", "name_fr": "Bûche d'épicéa",
+    "category": "wood", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:birch_log",
+    "name": "Birch Log", "name_fr": "Bûche de bouleau",
+    "category": "wood", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:jungle_log",
+    "name": "Jungle Log", "name_fr": "Bûche de jungle",
+    "category": "wood", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:acacia_log",
+    "name": "Acacia Log", "name_fr": "Bûche d'acacia",
+    "category": "wood", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:dark_oak_log",
+    "name": "Dark Oak Log", "name_fr": "Bûche de chêne sombre",
+    "category": "wood", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:mangrove_log",
+    "name": "Mangrove Log", "name_fr": "Bûche de mangrove",
+    "category": "wood", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:cherry_log",
+    "name": "Cherry Log", "name_fr": "Bûche de cerisier",
+    "category": "wood", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:bamboo",
+    "name": "Bamboo", "name_fr": "Bambou",
+    "category": "plant", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:oak_planks",
+    "name": "Oak Planks", "name_fr": "Planches de chêne",
+    "category": "wood", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:oak_log", "count": 1 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:spruce_planks",
+    "name": "Spruce Planks", "name_fr": "Planches d'épicéa",
+    "category": "wood", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:spruce_log", "count": 1 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:birch_planks",
+    "name": "Birch Planks", "name_fr": "Planches de bouleau",
+    "category": "wood", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:birch_log", "count": 1 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:dark_oak_planks",
+    "name": "Dark Oak Planks", "name_fr": "Planches de chêne sombre",
+    "category": "wood", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:dark_oak_log", "count": 1 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:bamboo_planks",
+    "name": "Bamboo Planks", "name_fr": "Planches de bambou",
+    "category": "wood", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:bamboo", "count": 2 }], "output": 2 }
+  },
+  {
+    "id": "minecraft:raw_iron",
+    "name": "Raw Iron", "name_fr": "Fer brut",
+    "category": "metal", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop de l'iron ore (Y: 16 optimal). Fortune augmente le drop"
+  },
+  {
+    "id": "minecraft:iron_ingot",
+    "name": "Iron Ingot", "name_fr": "Lingot de fer",
+    "category": "metal", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:raw_iron", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:iron_block",
+    "name": "Block of Iron", "name_fr": "Bloc de fer",
+    "category": "metal", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3", "ingredients": [{ "id": "minecraft:iron_ingot", "count": 9 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:raw_gold",
+    "name": "Raw Gold", "name_fr": "Or brut",
+    "category": "metal", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop du gold ore (Y: -16 optimal)"
+  },
+  {
+    "id": "minecraft:gold_ingot",
+    "name": "Gold Ingot", "name_fr": "Lingot d'or",
+    "category": "metal", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:raw_gold", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:gold_block",
+    "name": "Block of Gold", "name_fr": "Bloc d'or",
+    "category": "metal", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3", "ingredients": [{ "id": "minecraft:gold_ingot", "count": 9 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:raw_copper",
+    "name": "Raw Copper", "name_fr": "Cuivre brut",
+    "category": "metal", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:copper_ingot",
+    "name": "Copper Ingot", "name_fr": "Lingot de cuivre",
+    "category": "metal", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:raw_copper", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:copper_block",
+    "name": "Block of Copper", "name_fr": "Bloc de cuivre",
+    "category": "metal", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3", "ingredients": [{ "id": "minecraft:copper_ingot", "count": 9 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:cut_copper",
+    "name": "Cut Copper", "name_fr": "Cuivre taillé",
+    "category": "metal", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:copper_block", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:diamond",
+    "name": "Diamond", "name_fr": "Diamant",
+    "category": "gem", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop du diamond ore (Y: -58 optimal, Fortune III)"
+  },
+  {
+    "id": "minecraft:diamond_block",
+    "name": "Block of Diamond", "name_fr": "Bloc de diamant",
+    "category": "gem", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3", "ingredients": [{ "id": "minecraft:diamond", "count": 9 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:emerald",
+    "name": "Emerald", "name_fr": "Émeraude",
+    "category": "gem", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop de l'emerald ore dans les biomes de montagne"
+  },
+  {
+    "id": "minecraft:lapis_lazuli",
+    "name": "Lapis Lazuli", "name_fr": "Lapis-lazuli",
+    "category": "gem", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:lapis_block",
+    "name": "Lapis Lazuli Block", "name_fr": "Bloc de lapis-lazuli",
+    "category": "gem", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3", "ingredients": [{ "id": "minecraft:lapis_lazuli", "count": 9 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:amethyst_shard",
+    "name": "Amethyst Shard", "name_fr": "Fragment d'améthyste",
+    "category": "gem", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Obtenu en minant les Amethyst Clusters dans les Amethyst Geodes"
+  },
+  {
+    "id": "minecraft:amethyst_block",
+    "name": "Block of Amethyst", "name_fr": "Bloc d'améthyste",
+    "category": "gem", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:amethyst_shard", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:ancient_debris",
+    "name": "Ancient Debris", "name_fr": "Débris anciens",
+    "category": "metal", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Nether uniquement (Y: 15 optimal). Résistant aux explosions"
+  },
+  {
+    "id": "minecraft:netherite_scrap",
+    "name": "Netherite Scrap", "name_fr": "Déchet de netherite",
+    "category": "metal", "craftable": false, "smeltable": true, "stackSize": 64,
+    "recipe": { "type": "furnace", "ingredients": [{ "id": "minecraft:ancient_debris", "count": 1 }], "output": 1, "fuel_cost": 0.1 }
+  },
+  {
+    "id": "minecraft:netherite_ingot",
+    "name": "Netherite Ingot", "name_fr": "Lingot de netherite",
+    "category": "metal", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:netherite_scrap", "count": 4 }, { "id": "minecraft:gold_ingot", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:redstone",
+    "name": "Redstone Dust", "name_fr": "Poussière de redstone",
+    "category": "redstone", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop du redstone ore (Y: -58 optimal)"
+  },
+  {
+    "id": "minecraft:redstone_block",
+    "name": "Block of Redstone", "name_fr": "Bloc de redstone",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3", "ingredients": [{ "id": "minecraft:redstone", "count": 9 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:observer",
+    "name": "Observer", "name_fr": "Observateur",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:cobblestone", "count": 6 }, { "id": "minecraft:redstone", "count": 2 }, { "id": "minecraft:quartz", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:piston",
+    "name": "Piston", "name_fr": "Piston",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:oak_planks", "count": 3 }, { "id": "minecraft:cobblestone", "count": 4 }, { "id": "minecraft:iron_ingot", "count": 1 }, { "id": "minecraft:redstone", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:sticky_piston",
+    "name": "Sticky Piston", "name_fr": "Piston collant",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:slime_ball", "count": 1 }, { "id": "minecraft:piston", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:hopper",
+    "name": "Hopper", "name_fr": "Entonnoir",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:iron_ingot", "count": 5 }, { "id": "minecraft:chest", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:dropper",
+    "name": "Dropper", "name_fr": "Distributeur",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:cobblestone", "count": 7 }, { "id": "minecraft:redstone", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:dispenser",
+    "name": "Dispenser", "name_fr": "Distributeur (avec arc)",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:cobblestone", "count": 7 }, { "id": "minecraft:bow", "count": 1 }, { "id": "minecraft:redstone", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:repeater",
+    "name": "Redstone Repeater", "name_fr": "Répéteur de redstone",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:redstone_torch", "count": 2 }, { "id": "minecraft:redstone", "count": 1 }, { "id": "minecraft:stone", "count": 3 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:comparator",
+    "name": "Redstone Comparator", "name_fr": "Comparateur de redstone",
+    "category": "redstone", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:redstone_torch", "count": 3 }, { "id": "minecraft:quartz", "count": 1 }, { "id": "minecraft:stone", "count": 3 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:chest",
+    "name": "Chest", "name_fr": "Coffre",
+    "category": "storage", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3_hollow", "ingredients": [{ "id": "minecraft:oak_planks", "count": 8 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:barrel",
+    "name": "Barrel", "name_fr": "Tonneau",
+    "category": "storage", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:oak_planks", "count": 6 }, { "id": "minecraft:oak_slab", "count": 2 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:shulker_box",
+    "name": "Shulker Box", "name_fr": "Boîte de shulker",
+    "category": "storage", "craftable": true, "stackSize": 1,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:shulker_shell", "count": 2 }, { "id": "minecraft:chest", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:furnace",
+    "name": "Furnace", "name_fr": "Fourneau",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3_hollow", "ingredients": [{ "id": "minecraft:cobblestone", "count": 8 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:blast_furnace",
+    "name": "Blast Furnace", "name_fr": "Haut fourneau",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:iron_ingot", "count": 5 }, { "id": "minecraft:furnace", "count": 1 }, { "id": "minecraft:smooth_stone", "count": 3 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:crafting_table",
+    "name": "Crafting Table", "name_fr": "Table de craft",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:oak_planks", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:enchanting_table",
+    "name": "Enchanting Table", "name_fr": "Table d'enchantement",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:diamond", "count": 2 }, { "id": "minecraft:obsidian", "count": 4 }, { "id": "minecraft:book", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:bookshelf",
+    "name": "Bookshelf", "name_fr": "Bibliothèque",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:oak_planks", "count": 6 }, { "id": "minecraft:book", "count": 3 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:book",
+    "name": "Book", "name_fr": "Livre",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:paper", "count": 3 }, { "id": "minecraft:leather", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:paper",
+    "name": "Paper", "name_fr": "Papier",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_1x3", "ingredients": [{ "id": "minecraft:sugar_cane", "count": 3 }], "output": 3 }
+  },
+  {
+    "id": "minecraft:beacon",
+    "name": "Beacon", "name_fr": "Balise",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:nether_star", "count": 1 }, { "id": "minecraft:glass", "count": 5 }, { "id": "minecraft:obsidian", "count": 3 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:tnt",
+    "name": "TNT", "name_fr": "TNT",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:gunpowder", "count": 5 }, { "id": "minecraft:sand", "count": 4 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:sugar_cane",
+    "name": "Sugar Cane", "name_fr": "Canne à sucre",
+    "category": "plant", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:wheat",
+    "name": "Wheat", "name_fr": "Blé",
+    "category": "food", "craftable": false, "raw": true, "stackSize": 64
+  },
+  {
+    "id": "minecraft:bread",
+    "name": "Bread", "name_fr": "Pain",
+    "category": "food", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_1x3", "ingredients": [{ "id": "minecraft:wheat", "count": 3 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:hay_block",
+    "name": "Hay Bale", "name_fr": "Botte de foin",
+    "category": "food", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3", "ingredients": [{ "id": "minecraft:wheat", "count": 9 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:slime_ball",
+    "name": "Slime Ball", "name_fr": "Boule de slime",
+    "category": "mob_drops", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop des slimes (marais la nuit, ou chunks de slime Y<40)"
+  },
+  {
+    "id": "minecraft:slime_block",
+    "name": "Slime Block", "name_fr": "Bloc de slime",
+    "category": "mob_drops", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_3x3", "ingredients": [{ "id": "minecraft:slime_ball", "count": 9 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:gunpowder",
+    "name": "Gunpowder", "name_fr": "Poudre à canon",
+    "category": "mob_drops", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop des creepers"
+  },
+  {
+    "id": "minecraft:string",
+    "name": "String", "name_fr": "Ficelle",
+    "category": "mob_drops", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop des araignées"
+  },
+  {
+    "id": "minecraft:leather",
+    "name": "Leather", "name_fr": "Cuir",
+    "category": "mob_drops", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop des vaches, chevaux, lamas"
+  },
+  {
+    "id": "minecraft:bone",
+    "name": "Bone", "name_fr": "Os",
+    "category": "mob_drops", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop des squelettes"
+  },
+  {
+    "id": "minecraft:bone_meal",
+    "name": "Bone Meal", "name_fr": "Farine d'os",
+    "category": "utility", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:bone", "count": 1 }], "output": 3 }
+  },
+  {
+    "id": "minecraft:ender_pearl",
+    "name": "Ender Pearl", "name_fr": "Perle de l'Ender",
+    "category": "mob_drops", "craftable": false, "raw": true, "stackSize": 16,
+    "notes": "Drop des Endermans"
+  },
+  {
+    "id": "minecraft:blaze_rod",
+    "name": "Blaze Rod", "name_fr": "Bâton de blaze",
+    "category": "nether", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop des blazes dans les forteresses du Nether"
+  },
+  {
+    "id": "minecraft:blaze_powder",
+    "name": "Blaze Powder", "name_fr": "Poudre de blaze",
+    "category": "nether", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:blaze_rod", "count": 1 }], "output": 2 }
+  },
+  {
+    "id": "minecraft:nether_star",
+    "name": "Nether Star", "name_fr": "Étoile du Nether",
+    "category": "boss_drop", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop du Wither boss uniquement"
+  },
+  {
+    "id": "minecraft:shulker_shell",
+    "name": "Shulker Shell", "name_fr": "Coquille de shulker",
+    "category": "mob_drops", "craftable": false, "raw": true, "stackSize": 64,
+    "notes": "Drop des shulkers dans l'End (taux 50% par défaut)"
+  },
+  {
+    "id": "minecraft:mud",
+    "name": "Mud", "name_fr": "Boue",
+    "category": "natural", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "use", "ingredients": [{ "id": "minecraft:dirt", "count": 1 }, { "id": "minecraft:water_bottle", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:packed_mud",
+    "name": "Packed Mud", "name_fr": "Boue compactée",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:mud", "count": 1 }, { "id": "minecraft:wheat", "count": 1 }], "output": 1 }
+  },
+  {
+    "id": "minecraft:mud_bricks",
+    "name": "Mud Bricks", "name_fr": "Briques de boue",
+    "category": "building", "craftable": true, "stackSize": 64,
+    "recipe": { "type": "crafting_2x2", "ingredients": [{ "id": "minecraft:packed_mud", "count": 4 }], "output": 4 }
+  },
+  {
+    "id": "minecraft:spyglass",
+    "name": "Spyglass", "name_fr": "Longue-vue",
+    "category": "utility", "craftable": true, "stackSize": 1,
+    "recipe": { "type": "crafting", "ingredients": [{ "id": "minecraft:amethyst_shard", "count": 1 }, { "id": "minecraft:copper_ingot", "count": 2 }], "output": 1 }
+  }
+]
