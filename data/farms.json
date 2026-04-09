@@ -1,0 +1,145 @@
+[
+  {
+    "id": "iron_farm_standard",
+    "name": "Iron Farm (standard, 1 village)",
+    "category": "metal",
+    "output_item": "minecraft:iron_ingot",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 9000,
+      "per_tps_loss": 450,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "1 golem par village actif, ~0.83 lingots/s à 20 TPS"
+    },
+    "resources_to_build": [
+      { "id": "minecraft:iron_ingot", "count": 512 },
+      { "id": "minecraft:glass", "count": 128 },
+      { "id": "minecraft:stone_bricks", "count": 256 }
+    ],
+    "versions": ["1.19", "1.20", "1.21"],
+    "links": {
+      "tutorial": "https://www.youtube.com/watch?v=example"
+    }
+  },
+  {
+    "id": "iron_farm_mega",
+    "name": "Iron Farm (mega, 8 villages)",
+    "category": "metal",
+    "output_item": "minecraft:iron_ingot",
+    "difficulty": "advanced",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 72000,
+      "per_tps_loss": 3600,
+      "optimal_tps": 20,
+      "min_sim_distance": 6,
+      "notes": "8× rendement, nécessite plus de ressources pour construire"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "gold_farm_standard",
+    "name": "Gold Farm (Nether, standard)",
+    "category": "metal",
+    "output_item": "minecraft:gold_ingot",
+    "difficulty": "intermediate",
+    "requires_nether": true,
+    "rates": {
+      "base_per_hour": 6000,
+      "per_tps_loss": 300,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Basée sur spawn de piglins au Nether. Nécessite une plateforme de spawn"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "mob_farm_standard",
+    "name": "Mob Farm (darkroom, standard)",
+    "category": "mob_drops",
+    "output_items": [
+      "minecraft:gunpowder",
+      "minecraft:string",
+      "minecraft:rotten_flesh",
+      "minecraft:arrow",
+      "minecraft:bone"
+    ],
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 3600,
+      "per_tps_loss": 180,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Rendement en drops variés. Dépend fortement de la dimension de la darkroom"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "creeper_farm",
+    "name": "Creeper Farm (gunpowder)",
+    "category": "mob_drops",
+    "output_item": "minecraft:gunpowder",
+    "difficulty": "intermediate",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 4800,
+      "per_tps_loss": 240,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Utilise des cats pour cibler uniquement les creepers"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "sand_farm_tnt",
+    "name": "Sand Farm (TNT duplication)",
+    "category": "natural",
+    "output_item": "minecraft:sand",
+    "difficulty": "advanced",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 54000,
+      "per_tps_loss": 2700,
+      "optimal_tps": 20,
+      "min_sim_distance": 4,
+      "notes": "Basée sur duplication TNT. Peut être patch selon la version serveur"
+    },
+    "versions": ["1.19", "1.20"],
+    "notes": "Vérifier si la duplication TNT est autorisée sur ton serveur"
+  },
+  {
+    "id": "sugarcane_farm_observer",
+    "name": "Sugar Cane Farm (observer + piston)",
+    "category": "plant",
+    "output_item": "minecraft:sugar_cane",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 10800,
+      "per_tps_loss": 540,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Par rangée de 16 cannes. Multiplier selon taille de la farm"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  },
+  {
+    "id": "bamboo_farm",
+    "name": "Bamboo Farm (fuel / scaffolding)",
+    "category": "plant",
+    "output_item": "minecraft:bamboo",
+    "difficulty": "beginner",
+    "requires_nether": false,
+    "rates": {
+      "base_per_hour": 86400,
+      "per_tps_loss": 4320,
+      "optimal_tps": 20,
+      "min_sim_distance": 2,
+      "notes": "Excellente source de fuel. Très dense en items/h"
+    },
+    "versions": ["1.19", "1.20", "1.21"]
+  }
+]

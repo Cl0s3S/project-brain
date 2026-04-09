@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Brain — Minecraft Planner</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">🧠</span>
+      <span class="logo-text">Project Brain</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#dashboard" class="nav-item active" data-page="dashboard">
+        <span class="nav-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="#project" class="nav-item" data-page="project">
+        <span class="nav-icon">🗺️</span>
+        <span>Projets</span>
+      </a>
+      <a href="#farms" class="nav-item" data-page="farms">
+        <span class="nav-icon">🌾</span>
+        <span>Farm Planner</span>
+      </a>
+      <a href="#resources" class="nav-item" data-page="resources">
+        <span class="nav-icon">🔁</span>
+        <span>Ressources</span>
+      </a>
+      <a href="#builder" class="nav-item" data-page="builder">
+        <span class="nav-icon">🏗️</span>
+        <span>Builder</span>
+      </a>
+      <a href="#team" class="nav-item" data-page="team">
+        <span class="nav-icon">🤝</span>
+        <span>Équipe</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <span>v0.1.0 — Alpha</span>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content" id="main-content">
+
+    <!-- PAGE: DASHBOARD -->
+    <section class="page active" id="page-dashboard">
+      <header class="page-header">
+        <h1>Dashboard</h1>
+        <p class="subtitle">Vue globale de ton monde Minecraft</p>
+      </header>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Projets actifs</span>
+          <span class="stat-value" id="stat-projects">0</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Farms configurées</span>
+          <span class="stat-value" id="stat-farms">0</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Ressources trackées</span>
+          <span class="stat-value" id="stat-resources">0</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">% progression globale</span>
+          <span class="stat-value" id="stat-progress">0%</span>
+        </div>
+      </div>
+
+      <div class="section-title">Projets récents</div>
+      <div class="projects-list" id="dashboard-projects">
+        <div class="empty-state">
+          <span>🗺️</span>
+          <p>Aucun projet pour l'instant.</p>
+          <button class="btn-primary" onclick="navigateTo('project')">Créer un projet</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE: PROJECTS -->
+    <section class="page" id="page-project">
+      <header class="page-header">
+        <h1>Projets</h1>
+        <button class="btn-primary" id="btn-new-project">+ Nouveau projet</button>
+      </header>
+
+      <!-- Formulaire création projet -->
+      <div class="card" id="form-new-project" style="display:none;">
+        <h2>Nouveau projet</h2>
+        <div class="form-group">
+          <label>Nom du projet</label>
+          <input type="text" id="proj-name" placeholder="ex : Château médiéval" />
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <input type="text" id="proj-desc" placeholder="Description courte..." />
+        </div>
+        <div class="form-group">
+          <label>Type</label>
+          <select id="proj-type">
+            <option value="build">Build</option>
+            <option value="farm">Farm</option>
+            <option value="redstone">Redstone</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div class="form-actions">
+          <button class="btn-primary" onclick="createProject()">Créer</button>
+          <button class="btn-secondary" onclick="cancelNewProject()">Annuler</button>
+        </div>
+      </div>
+
+      <!-- Liste des projets -->
+      <div class="projects-grid" id="projects-grid">
+        <div class="empty-state">
+          <span>🗺️</span>
+          <p>Aucun projet. Crée-en un !</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE: FARM PLANNER -->
+    <section class="page" id="page-farms">
+      <header class="page-header">
+        <h1>Farm Planner</h1>
+        <p class="subtitle">Calcule le rendement de tes farms</p>
+      </header>
+
+      <div class="two-col">
+        <div class="card">
+          <h2>Paramètres</h2>
+          <div class="form-group">
+            <label>Type de farm</label>
+            <select id="farm-type">
+              <option value="">-- Choisir --</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>TPS du serveur</label>
+            <input type="range" id="farm-tps" min="1" max="20" value="20" />
+            <span id="farm-tps-display">20 TPS</span>
+          </div>
+          <div class="form-group">
+            <label>Simulation distance (chunks)</label>
+            <input type="range" id="farm-simdist" min="2" max="16" value="6" />
+            <span id="farm-simdist-display">6 chunks</span>
+          </div>
+          <div class="form-group">
+            <label>Objectif (nb items)</label>
+            <input type="number" id="farm-goal" placeholder="ex : 500000" />
+          </div>
+          <button class="btn-primary" onclick="calculateFarm()">Calculer</button>
+        </div>
+
+        <div class="card" id="farm-results">
+          <h2>Résultats</h2>
+          <div class="result-row">
+            <span>Rendement brut</span>
+            <strong id="res-brut">—</strong>
+          </div>
+          <div class="result-row">
+            <span>Rendement réaliste</span>
+            <strong id="res-reel">—</strong>
+          </div>
+          <div class="result-row">
+            <span>Temps pour l'objectif</span>
+            <strong id="res-temps">—</strong>
+          </div>
+          <div class="result-row">
+            <span>Sim distance minimale</span>
+            <strong id="res-simdist">—</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE: RESSOURCES -->
+    <section class="page" id="page-resources">
+      <header class="page-header">
+        <h1>Calculateur de Ressources</h1>
+        <p class="subtitle">Objectif → Plan de farming complet</p>
+      </header>
+
+      <div class="card">
+        <h2>Quel est ton objectif ?</h2>
+        <div class="goal-input-row">
+          <input type="number" id="goal-qty" placeholder="Quantité" />
+          <select id="goal-item">
+            <option value="">-- Choisir un bloc/item --</option>
+          </select>
+          <button class="btn-primary" onclick="calculateResources()">Calculer</button>
+        </div>
+      </div>
+
+      <div class="card" id="resources-plan" style="display:none;">
+        <h2>Plan complet</h2>
+        <div id="resources-breakdown"></div>
+      </div>
+    </section>
+
+    <!-- PAGE: BUILDER -->
+    <section class="page" id="page-builder">
+      <header class="page-header">
+        <h1>Builder Assistant</h1>
+        <p class="subtitle">Outils pour t'aider à builder</p>
+      </header>
+      <div class="coming-soon">
+        <span>🏗️</span>
+        <h2>Bientôt disponible</h2>
+        <p>Générateur de palettes, formes géométriques, suggestions de styles...</p>
+        <p>Prévu pour la v0.5</p>
+      </div>
+    </section>
+
+    <!-- PAGE: TEAM -->
+    <section class="page" id="page-team">
+      <header class="page-header">
+        <h1>Équipe</h1>
+        <p class="subtitle">Collaboration et assignation de tâches</p>
+      </header>
+      <div class="coming-soon">
+        <span>🤝</span>
+        <h2>Bientôt disponible</h2>
+        <p>Gestion d'équipe, tâches partagées, synchronisation en temps réel...</p>
+        <p>Prévu pour la v1.0</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
